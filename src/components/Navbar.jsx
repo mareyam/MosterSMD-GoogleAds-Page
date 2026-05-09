@@ -14,7 +14,10 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white border-b-2 border-[#0d1f3c]">
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
-        <a href="#hero" className="text-lg font-bold text-[#0d1f3c] tracking-tight">
+        <a
+          href="#hero"
+          className="text-lg font-bold text-[#0d1f3c] tracking-tight"
+        >
           Moster SMD Technik
         </a>
 
@@ -28,12 +31,6 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <a
-            href="#quote"
-            className="px-5 py-2 bg-[#0d1f3c] text-white text-sm font-bold hover:bg-[#1a3560] transition-colors"
-          >
-            Request a Quote
-          </a>
         </nav>
 
         <button
@@ -41,9 +38,21 @@ export default function Navbar() {
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
         >
-          <span className={`block w-6 h-0.5 bg-[#0d1f3c] transition-all ${open ? "rotate-45 translate-y-2" : ""}`} />
-          <span className={`block w-6 h-0.5 bg-[#0d1f3c] transition-all ${open ? "opacity-0" : ""}`} />
-          <span className={`block w-6 h-0.5 bg-[#0d1f3c] transition-all ${open ? "-rotate-45 -translate-y-2" : ""}`} />
+          <span
+            className={`block w-6 h-0.5 bg-[#0d1f3c] transition-all ${
+              open ? "rotate-45 translate-y-2" : ""
+            }`}
+          />
+          <span
+            className={`block w-6 h-0.5 bg-[#0d1f3c] transition-all ${
+              open ? "opacity-0" : ""
+            }`}
+          />
+          <span
+            className={`block w-6 h-0.5 bg-[#0d1f3c] transition-all ${
+              open ? "-rotate-45 -translate-y-2" : ""
+            }`}
+          />
         </button>
       </div>
 
@@ -59,15 +68,6 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <div className="p-4">
-            <a
-              href="#quote"
-              className="block text-center px-5 py-3 bg-[#0d1f3c] text-white text-sm font-bold"
-              onClick={() => setOpen(false)}
-            >
-              Request a Quote
-            </a>
-          </div>
         </div>
       )}
     </header>

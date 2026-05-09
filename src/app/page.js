@@ -17,7 +17,6 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <QuoteForm />
         <Services />
         <WhyUs />
         <Gallery />
