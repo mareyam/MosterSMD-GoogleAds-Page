@@ -24,32 +24,6 @@ const reasons = [
     desc: "Fine-pitch and advanced PCB assembly down to 0.3 mm pitch since 1994.",
   },
 ];
-// const reasons = [
-//   {
-//     title: "Direct access to engineers",
-//     desc: "You speak to the people who actually assemble your boards — not a sales rep reading from a script. Questions about tolerances, component placement, and DFM get answered the same day.",
-//   },
-//   {
-//     title: "Flexible production scale",
-//     desc: "We don't turn away prototypes and we don't have upper volume limits. Whether you need 1 board or 100,000, the same engineering team handles your project from start to finish.",
-//   },
-//   {
-//     title: "German manufacturing standards",
-//     desc: "ISO 9001:2015 certified. Every batch has a logged temperature profile, a full AOI record, and documented process data. Your boards are traceable from paste printing to final inspection.",
-//   },
-//   {
-//     title: "Transparent, itemised quotes",
-//     desc: "No vague pricing. We send you a clear quote broken down by assembly, components, and logistics — so you know exactly what you're paying for before you commit to anything.",
-//   },
-//   {
-//     title: "Rapid quote turnaround",
-//     desc: "Send your Gerber files and BOM by email. We'll review manufacturability and reply with a detailed quote within 24 hours on business days — not 5–10 days like larger contract manufacturers.",
-//   },
-//   {
-//     title: "30 years of Fine-Pitch expertise",
-//     desc: "Since 1994 we've kept pace with component miniaturisation. We handle 0201 passives, fine-pitch ICs down to 0.3 mm pitch, and BGA packages that most regional EMS providers won't touch.",
-//   },
-// ];
 
 export default function WhyUs() {
   return (

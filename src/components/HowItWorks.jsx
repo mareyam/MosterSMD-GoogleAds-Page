@@ -1,32 +1,20 @@
 const steps = [
   {
     num: "01",
-    title: "Send Gerber Files & BOM",
-    desc: "Send us your business details, we'll contact you and schedule a call.",
+    title: "Send Details & Get Quote",
+    desc: "Send us your business detials. We review them and send an itemised quote within 12h.",
     icon: "📁",
   },
   {
     num: "02",
-    title: "Technical Review & Quotation",
-    desc: "Our engineers check for DFM issues, pad sizes, clearances, thermal relief. You get a clear itemised quote within 12 hours.",
-    icon: "🔎",
-  },
-  {
-    num: "03",
-    title: "Component Sourcing & Verification",
-    desc: "We procure and verify every component against your BOM. Parts are checked for authenticity and stored in ESD-safe conditions.",
-    icon: "📦",
-  },
-  {
-    num: "04",
-    title: "Assembly & AOI Inspection",
-    desc: "Paste printing, pick-and-place, reflow soldering, then 100% AOI. A temperature profile is logged for every batch.",
+    title: "Procurement & Assembly",
+    desc: "We source components, then run SMT assembly with AOI inspection and process logging.",
     icon: "⚙️",
   },
   {
-    num: "05",
-    title: "Delivery with Full Documentation",
-    desc: "Boards ship in ESD-safe packaging with inspection reports, thermal profiles, and component traceability records included.",
+    num: "03",
+    title: "Testing & Delivery",
+    desc: "Final inspection, documentation, and shipment in ESD-safe packaging.",
     icon: "🚚",
   },
 ];
@@ -40,7 +28,7 @@ export default function HowItWorks() {
             How It Works
           </h2>
           <p className="text-[#0d1f3c] max-w-2xl">
-            From files to finished boards, five steps, zero surprises.
+            From details to finished boards, three steps, zero surprises.
           </p>
         </div>
 

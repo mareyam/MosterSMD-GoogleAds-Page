@@ -21,10 +21,10 @@ export default function Footer() {
             Datenschutz
           </a>
           <a
-            href="mailto:mostersmd@aol.com"
+            href="mailto:moster@moster-smd.de"
             className="hover:text-white transition-colors"
           >
-            mostersmd@aol.com
+            moster@moster-smd.de
           </a>
         </div>
       </div>

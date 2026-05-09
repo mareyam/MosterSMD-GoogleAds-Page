@@ -8,7 +8,7 @@ const faqs = [
   },
   {
     q: "How quickly can I get a quote?",
-    a: "Send us your Gerber files and BOM by email or through the form on this page. We review manufacturability and reply with a detailed, itemised quote within 24 hours on business days. If something in your design needs to be discussed first, we'll flag it immediately.",
+    a: "Send us your business details by email or through the form on this page. We review manufacturability and reply with a detailed, itemised quote within 24 hours on business days. If something in your design needs to be discussed first, we'll flag it immediately.",
   },
   {
     q: "How quickly can you deliver a prototype?",
@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: "Can you source components on our behalf?",
-    a: "Yes. We offer complete BOM procurement and component warehousing as part of our contract assembly service. You send us the design files; we source, store, and manage the components. We work with established distributors and have long-term relationships that help with availability during component shortages.",
+    a: "Yes. We offer complete BOM procurement and component warehousing as part of our contract assembly service. You send us the details; we source, store, and manage the components. We work with established distributors and have long-term relationships that help with availability during component shortages.",
   },
   {
     q: "Are you ISO 9001 certified?",

@@ -25,16 +25,19 @@ export default function Career() {
           <div>
             <span
               className="inline-block px-4 py-1 rounded-full text-sm font-semibold mb-4"
-              style={{ background: "rgba(232,114,42,0.12)", color: "var(--accent)" }}
+              style={{
+                background: "rgba(232,114,42,0.12)",
+                color: "var(--accent)",
+              }}
             >
               Karriere
             </span>
             <h2 className="section-title">Komm an Bord!</h2>
             <p className="text-gray-600 leading-relaxed mb-6">
-              Wir sind ein wachsendes Unternehmen mit einem engagierten Team und suchen
-              qualifizierte Fachkräfte, die gemeinsam mit uns die Elektronikfertigung der
-              Zukunft gestalten. Flache Hierarchien, ein kollegiales Miteinander und
-              attraktive Konditionen warten auf Sie.
+              Wir sind ein wachsendes Unternehmen mit einem engagierten Team und
+              suchen qualifizierte Fachkräfte, die gemeinsam mit uns die
+              Elektronikfertigung der Zukunft gestalten. Flache Hierarchien, ein
+              kollegiales Miteinander und attraktive Konditionen warten auf Sie.
             </p>
             <ul className="space-y-3 mb-8">
               {[
@@ -90,14 +93,15 @@ export default function Career() {
               style={{ borderColor: "var(--blue-light)" }}
             >
               <p className="text-gray-600 text-sm mb-3">
-                Keine passende Stelle dabei? Wir freuen uns über Initiativbewerbungen!
+                Keine passende Stelle dabei? Wir freuen uns über
+                Initiativbewerbungen!
               </p>
               <a
-                href="mailto:info@moster-smd.de"
+                href="mailto:moster@moster-smd.de"
                 className="text-sm font-semibold hover:underline"
                 style={{ color: "var(--blue)" }}
               >
-                info@moster-smd.de
+                moster@moster-smd.de
               </a>
             </div>
           </div>

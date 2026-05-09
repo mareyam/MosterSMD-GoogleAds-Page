@@ -2,7 +2,12 @@
 import { useState } from "react";
 
 export default function QuoteForm() {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
   const [sent, setSent] = useState(false);
 
   function handleChange(e) {
@@ -27,7 +32,7 @@ export default function QuoteForm() {
               Get a Quote in 12 Hours
             </h2>
             <p className="text-[#0d1f3c] mb-6 leading-relaxed">
-              Send us your PCB files and BOM. We'll review your project and come
+              Send us your business details. We'll review your project and come
               back with a clear, itemised quote no sales calls, no generic
               pricing.
             </p>
@@ -86,6 +91,19 @@ export default function QuoteForm() {
                     value={form.email}
                     onChange={handleChange}
                     placeholder="you@company.de"
+                    className="w-full border-2 border-[#0d1f3c] px-4 py-3 text-sm text-[#0d1f3c] placeholder-gray-400 focus:outline-none bg-white"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-bold uppercase tracking-widest text-[#0d1f3c] mb-2">
+                    Phone Number
+                  </label>
+                  <input
+                    name="phone"
+                    type="tel"
+                    value={form.phone}
+                    onChange={handleChange}
+                    placeholder="+49 123 456 789"
                     className="w-full border-2 border-[#0d1f3c] px-4 py-3 text-sm text-[#0d1f3c] placeholder-gray-400 focus:outline-none bg-white"
                   />
                 </div>

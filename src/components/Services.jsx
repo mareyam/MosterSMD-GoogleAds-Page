@@ -45,45 +45,6 @@ const services = [
   },
 ];
 
-// const services = [
-//   {
-//     icon: "⚙️",
-//     title: "Serial Manufacturing",
-//     desc: "Automated SMD assembly using modern Siemens SIPLACE pick-and-place systems. We support Fine-Pitch components down to 0.3 mm, double-sided boards, and volumes from hundreds to hundreds of thousands of units.",
-//     specs: ["Fine-Pitch from 0.3 mm", "Double-sided assembly", "Up to 60,000 components/hour", "0201 to large connectors"],
-//   },
-//   {
-//     icon: "🔬",
-//     title: "Prototype & Small-Batch Assembly",
-//     desc: "Prototype assemblies delivered in as little as 3–7 working days depending on component availability. We handle single boards through to pre-series batches, with the same quality processes applied as serial production.",
-//     specs: ["No minimum order quantity", "3–7 day typical turnaround", "Full BOM review included", "Scalable to serial production"],
-//   },
-//   {
-//     icon: "🔍",
-//     title: "AOI Inspection & Quality Assurance",
-//     desc: "Every board goes through 100% automated optical inspection (AOI) as standard. We provide full inspection reports, solder joint documentation, and professional rework — not just a pass/fail stamp.",
-//     specs: ["100% AOI on every board", "Temperature profile logging per batch", "Stereo-zoom microscope inspection", "Full inspection reports provided"],
-//   },
-//   {
-//     icon: "📦",
-//     title: "Contract Assembly & Component Sourcing",
-//     desc: "Send us your Gerber files and BOM — we handle the rest. Procurement, warehousing, assembly, inspection, and just-in-time delivery to your facility. No need to manage multiple suppliers.",
-//     specs: ["Full BOM procurement", "Component warehousing", "Just-in-time delivery", "Long-term supply chain support"],
-//   },
-//   {
-//     icon: "🧪",
-//     title: "Reflow Soldering & Process Control",
-//     desc: "We create a custom temperature profile protocol for every batch, logged and stored per client. Lead-free and leaded processes available, with nitrogen atmosphere soldering for critical assemblies.",
-//     specs: ["Custom thermal profiles per batch", "Lead-free & leaded processes", "Nitrogen atmosphere option", "Profile documentation stored per order"],
-//   },
-//   {
-//     icon: "📋",
-//     title: "ISO-Certified Quality Management",
-//     desc: "Certified to DIN EN ISO 9001:2015. Every manufacturing process is documented, traceable, and repeatable. We don't just inspect at the end — quality is built into every step of the production process.",
-//     specs: ["DIN EN ISO 9001:2015 certified", "Full traceability per batch", "Documented process control", "Audit-ready manufacturing records"],
-//   },
-// ];
-
 export default function Services() {
   return (
     <section
