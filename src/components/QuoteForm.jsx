@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export default function Contact() {
+export default function QuoteForm() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [sent, setSent] = useState(false);
 
@@ -16,91 +16,68 @@ export default function Contact() {
 
   return (
     <section
-      id="contact"
-      className="py-20 bg-[#f0f4f9] border-b-2 border-[#0d1f3c]"
+      id="quote"
+      className="bg-[#f0f4f9] border-b-2 border-[#0d1f3c] py-16"
     >
       <div className="max-w-6xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1f3c] mb-6">
-              Contact Us
+            <h2 className="text-3xl md:text-4xl font-bold text-[#0d1f3c] mb-4">
+              Get a Quote in 12 Hours
             </h2>
-            <p className="text-[#0d1f3c] mb-10 leading-relaxed">
-              For quotes, technical questions, or general enquiries — contact us
-              directly. You'll reach the people who run the production line, not
-              a call centre.
+            <p className="text-[#0d1f3c] mb-6 leading-relaxed">
+              Send us your PCB files and BOM. We'll review your project and come
+              back with a clear, itemised quote no sales calls, no generic
+              pricing.
             </p>
-            <div className="space-y-6">
+            <ul className="space-y-3">
               {[
-                {
-                  label: "Address",
-                  val: "Moster SMD Technik\nAn d. Enz 3A,\n75223 Niefern-Öschelbronn",
-                },
-                {
-                  label: "Phone",
-                  val: "+49 7233 6502",
-                  href: "tel:+4972336502",
-                },
-                { label: "Fax", val: "+49 7233 81187" },
-                {
-                  label: "Email",
-                  val: "mostersmd@aol.com",
-                  href: "mailto:mostersmd@aol.com",
-                },
-                { label: "Hours", val: "Monday – Friday: 06:00 – 15:00" },
+                "We review manufacturability, not just price",
+                "No minimum order quantity",
+                "Direct contact with our engineers",
               ].map((item) => (
-                <div
-                  key={item.label}
-                  className="border-b border-[#0d1f3c] pb-4"
+                <li
+                  key={item}
+                  className="flex items-start gap-3 text-sm text-[#0d1f3c]"
                 >
-                  <div className="text-xs font-bold uppercase tracking-widest text-[#0d1f3c] mb-1">
-                    {item.label}
-                  </div>
-                  {item.href ? (
-                    <a
-                      href={item.href}
-                      className="text-[#0d1f3c] font-medium hover:underline underline-offset-2 whitespace-pre-line"
-                    >
-                      {item.val}
-                    </a>
-                  ) : (
-                    <div className="text-[#0d1f3c] whitespace-pre-line">
-                      {item.val}
-                    </div>
-                  )}
-                </div>
+                  <span className="text-[#0d1f3c] font-bold mt-0.5">✓</span>
+                  {item}
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
 
-          <div>
+          {/* Form */}
+          <div className="bg-white border-2 border-[#0d1f3c] p-8">
             {sent ? (
-              <div className="border-2 border-[#0d1f3c] p-10 text-center bg-white">
-                <p className="text-2xl font-bold text-[#0d1f3c] mb-2">
-                  Message sent.
+              <div className="text-center py-8">
+                <div className="text-4xl mb-4">✓</div>
+                <p className="text-xl font-bold text-[#0d1f3c]">
+                  Request received.
                 </p>
-                <p className="text-sm text-[#0d1f3c]">
+                <p className="text-sm text-[#0d1f3c] mt-2">
                   We'll reply within 24 hours.
                 </p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-5">
+              <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label className="block text-xs font-bold uppercase tracking-widest text-[#0d1f3c] mb-2">
-                    Name
+                    Your Name
                   </label>
                   <input
                     name="name"
                     required
                     value={form.name}
                     onChange={handleChange}
-                    placeholder="Your full name"
+                    placeholder="e.g. Thomas Müller"
                     className="w-full border-2 border-[#0d1f3c] px-4 py-3 text-sm text-[#0d1f3c] placeholder-gray-400 focus:outline-none bg-white"
                   />
                 </div>
                 <div>
                   <label className="block text-xs font-bold uppercase tracking-widest text-[#0d1f3c] mb-2">
-                    Email
+                    Work Email
                   </label>
                   <input
                     name="email"
@@ -108,21 +85,21 @@ export default function Contact() {
                     required
                     value={form.email}
                     onChange={handleChange}
-                    placeholder="your@email.com"
+                    placeholder="you@company.de"
                     className="w-full border-2 border-[#0d1f3c] px-4 py-3 text-sm text-[#0d1f3c] placeholder-gray-400 focus:outline-none bg-white"
                   />
                 </div>
                 <div>
                   <label className="block text-xs font-bold uppercase tracking-widest text-[#0d1f3c] mb-2">
-                    Message
+                    Project Details
                   </label>
                   <textarea
                     name="message"
                     required
-                    rows={6}
+                    rows={4}
                     value={form.message}
                     onChange={handleChange}
-                    placeholder="Your question or project details..."
+                    placeholder="Describe your PCB project — quantity, layers, components, timeline..."
                     className="w-full border-2 border-[#0d1f3c] px-4 py-3 text-sm text-[#0d1f3c] placeholder-gray-400 focus:outline-none bg-white resize-none"
                   />
                 </div>
@@ -130,8 +107,11 @@ export default function Contact() {
                   type="submit"
                   className="w-full bg-[#0d1f3c] text-white py-4 text-sm font-bold hover:bg-[#1a3560] transition-colors"
                 >
-                  Send Message
+                  Request a Free Quote →
                 </button>
+                <p className="text-xs text-gray-500 text-center">
+                  No commitment. No spam. Just a clear quote.
+                </p>
               </form>
             )}
           </div>
