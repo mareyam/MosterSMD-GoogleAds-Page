@@ -12,6 +12,17 @@ export default function Footer() {
           <div className="text-sm text-blue-300 mt-1">
             © {new Date().getFullYear()} All rights reserved.
           </div>
+          <div className="text-sm text-white mt-4">
+            Developed by{" "}
+            <a
+              href="https://zamoog.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+            >
+              zamoog.com
+            </a>
+          </div>
         </div>
         <div className="flex gap-6 text-sm text-blue-300">
           <a href="#" className="hover:text-white transition-colors">
