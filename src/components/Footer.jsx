@@ -28,8 +28,8 @@ export default function Footer() {
           <a href="#" className="hover:text-white transition-colors">
             Impressum
           </a>
-          <a href="#" className="hover:text-white transition-colors">
-            Datenschutz
+          <a href="/privacy-policy" className="hover:text-white transition-colors">
+            Privacy Policy
           </a>
           <a
             href="mailto:moster@moster-smd.de"
