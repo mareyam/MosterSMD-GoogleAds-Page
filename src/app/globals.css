@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
-@theme inline {
-  --font-sans: var(--font-inter);
+@theme {
+  --font-sans: var(--font-inter), sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+  --color-navy-dark: #080f1a;
   --color-navy: #0d1f3c;
   --color-navy-light: #1a3560;
+  --color-cyber-cyan: #00f2fe;
+  --color-cyber-teal: #06b6d4;
+  --color-cyber-blue: #3b82f6;
+  --color-cyber-indigo: #6366f1;
 }
 
 html {
@@ -15,3 +22,87 @@ body {
   background: #ffffff;
   color: #0d1f3c;
 }
+
+/* Custom Design Utilities */
+
+.font-display {
+  font-family: var(--font-display), sans-serif;
+}
+
+.bg-grid-pattern {
+  background-image: radial-gradient(rgba(13, 31, 60, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.bg-grid-pattern-dark {
+  background-image: radial-gradient(rgba(0, 242, 254, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #00f2fe 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-navy {
+  background: linear-gradient(135deg, #0d1f3c 0%, #1a3560 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow-card {
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glow-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px -10px rgba(0, 242, 254, 0.15);
+  border-color: rgba(0, 242, 254, 0.3);
+}
+
+.glow-card-dark {
+  position: relative;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glow-card-dark:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px -10px rgba(0, 242, 254, 0.25);
+  border-color: rgba(0, 242, 254, 0.4);
+  background-color: rgba(13, 31, 60, 0.5);
+}
+
+@keyframes pulse-cyan {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+    box-shadow: 0 0 0 0 rgba(0, 242, 254, 0.4);
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+    box-shadow: 0 0 16px 4px rgba(0, 242, 254, 0.2);
+  }
+}
+
+.animate-pulse-cyan {
+  animation: pulse-cyan 3s infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080f1a;
+}
+::-webkit-scrollbar-thumb {
+  background: #0d1f3c;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #1a3560;
+}
+
